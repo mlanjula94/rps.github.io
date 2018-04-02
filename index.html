@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock paper Scissors</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="h1 text-center mt-3">Rock Paper Scissors</div>
+
+        <div class="row">
+            <div id="header_p1" class="col-6 bg-light p-2">
+                <form id="form_p1" class="form-inline">
+                    <label class="sr-only" for="inlineFormInputName1">Name</label>
+                    <input id="name_p1" type="text" class="input_name form-control mb-2 mr-sm-2" id="inlineFormInputName1" placeholder="Player1">
+                    <button id="submit_p1" type="submit" class="submit_name btn btn-primary mb-2">Submit</button>
+                </form>
+                <div class="row p-2">
+                    <div class="col-3 bg-light">
+                        <br>
+                        <button id="rock" name="rock" class="character float-left bg-dark text-white text-center">
+                            <img class="img-fluid img" src="images/rock.png" alt="Khal Drogo">
+                        </button>
+                    </div>
+                    <div class="col-3 bg-light">
+                        <br>
+                        <button id="paper" name="paper" class="character float-left bg-dark text-white text-center">
+                            <img class="img-fluid img" src="images/paper.png" alt="Khal Drogo">
+                        </button>
+                    </div>
+                    <div class="col-3 bg-light">
+                        <br>
+                        <button id="scissors" name="scissors" class="character float-left bg-dark text-white text-center">
+                            <img class="img-fluid img" src="images/scissors.png" alt="Khal Drogo">
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="header_p2" class="col-6 bg-dark text-white p-2">
+                <form id="form_p2" class="form-inline">
+                    <label class="sr-only" for="inlineFormInputName2">Name</label>
+                    <input id="name_p2" type="text" class="input_name form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Player2">
+                    <button id="submit_p2" type="submit" class="submit_name btn btn-primary mb-2">Submit</button>
+                </form>
+                <div class="row p-2">
+                    <div class="col-3 bg-dark">
+                        <br>
+                        <button id="rock" name="rock" class="character float-left bg-dark text-white text-center">
+                            <img class="img-fluid img" src="images/rock.png" alt="Khal Drogo">
+                        </button>
+                    </div>
+                    <div class="col-3 bg-dark">
+                        <br>
+                        <button id="paper" name="paper" class="character float-left bg-dark text-white text-center">
+                            <img class="img-fluid img" src="images/paper.png" alt="Khal Drogo">
+                        </button>
+                    </div>
+                    <div class="col-3 bg-dark">
+                        <br>
+                        <button id="scissors" name="scissors" class="character float-left bg-dark text-white text-center">
+                            <img class="img-fluid img" src="images/scissors.png" alt="Khal Drogo">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script src="assets/game.js"></script>
+</body>
+
+</html>
